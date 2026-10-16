@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+
+	<name>Divide Stroke into Parallel Paths</name>
+	<id>maps_edge.divide_stroke_parallel</id>
+
+	<param name="n" type="int" min="2" max="100" gui-text="Number of parallel paths:">2</param>
+
+	<effect needs-live-preview="true">
+		<object-type>path</object-type>
+		<effects-menu>
+			<submenu name="Map's Edge Tools" translatable="no">
+				<submenu name="General" translatable="no">
+					<submenu name="Paths" translatable="no" />
+				</submenu>
+			</submenu>
+		</effects-menu>
+	</effect>
+
+	<script>
+		<command location="inx" interpreter="python">divide_stroke_parallel.py</command>
+	</script>
+
+</inkscape-extension>
